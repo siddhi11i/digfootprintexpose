@@ -13,6 +13,7 @@ import {
   RefreshCw
 } from 'lucide-react';
 import { sha1, splitHash } from '../utils/crypto';
+import { API_BASE } from '../utils/config';
 
 export default function PasswordCheck({ onPasswordAuditChange, initialPassword = '' }) {
   const [password, setPassword] = useState(initialPassword);
@@ -69,7 +70,7 @@ export default function PasswordCheck({ onPasswordAuditChange, initialPassword =
 
     try {
       // 1. Send ONLY first 5 characters to backend
-      const response = await fetch(`/api/pwned-password/${hashPrefix}`);
+      const response = await fetch(`${API_BASE}/api/pwned-password/${hashPrefix}`);
       
       if (!response.ok) {
         const errorData = await response.json().catch(() => ({}));

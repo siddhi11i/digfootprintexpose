@@ -207,6 +207,19 @@ app.get('/api/sample-queries', (req, res) => {
   });
 });
 
+// Serve built frontend assets if dist folder exists (Unified Full-Stack Deployment)
+const distPath = path.join(__dirname, '..', 'frontend', 'dist');
+if (fs.existsSync(distPath)) {
+  console.log(`[INFO] Serving frontend static files from: ${distPath}`);
+  app.use(express.static(distPath));
+  app.get('*', (req, res, next) => {
+    if (req.path.startsWith('/api')) {
+      return next();
+    }
+    res.sendFile(path.join(distPath, 'index.html'));
+  });
+}
+
 app.listen(PORT, () => {
   console.log(`[READY] Digital Footprint Exposer Backend running on http://localhost:${PORT}`);
 });

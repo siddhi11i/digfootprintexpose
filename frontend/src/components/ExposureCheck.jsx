@@ -12,6 +12,7 @@ import {
   RefreshCw,
   FileWarning
 } from 'lucide-react';
+import { API_BASE } from '../utils/config';
 
 export default function ExposureCheck({ onExposureAuditChange, initialQuery = '' }) {
   const [query, setQuery] = useState(initialQuery);
@@ -34,7 +35,7 @@ export default function ExposureCheck({ onExposureAuditChange, initialQuery = ''
     setResult(null);
 
     try {
-      const response = await fetch('/api/check-exposure', {
+      const response = await fetch(`${API_BASE}/api/check-exposure`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ query: query.trim() })
