@@ -1,3 +1,5 @@
+LIVE @ https://digfootprintexpose-hrin.vercel.app/
+
 # 🛡️ Digital Footprint Exposer — Security Self-Audit Platform
 
 An interactive security self-audit web application prototype designed to diagnose credential exposure across breach corpuses without compromising privacy during the evaluation process.
