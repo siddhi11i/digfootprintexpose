@@ -1,0 +1,134 @@
+[
+  {
+    "id": "breach-001",
+    "name": "SocialAppX Database Dump",
+    "date": "2023-11-14",
+    "category": "Social Media",
+    "severity": "High",
+    "exposedData": ["Usernames", "Email addresses", "Bcrypt hashed passwords", "Phone numbers", "Direct messages"],
+    "recordsCount": "48,500,000",
+    "description": "An unsecured MongoDB replica set exposed user profile databases including contact phone numbers and message metadata.",
+    "targets": ["socialapp", "john.doe@example.com", "sarah_tech", "alex99@gmail.com", "developer@web.io", "admin"]
+  },
+  {
+    "id": "breach-002",
+    "name": "CloudShop Global E-Commerce Leak",
+    "date": "2024-03-22",
+    "category": "E-Commerce",
+    "severity": "Critical",
+    "exposedData": ["Full names", "Billing addresses", "Credit card last 4 digits", "Order history", "Email addresses"],
+    "recordsCount": "12,200,000",
+    "description": "SQL injection vulnerability on the payment receipt generation endpoint allowed unauthorized data exfiltration.",
+    "targets": ["cloudshop", "jane.smith@outlook.com", "john.doe@example.com", "mike_crypto", "buyer@shop.com"]
+  },
+  {
+    "id": "breach-003",
+    "name": "CryptoVault Asset Portal Incident",
+    "date": "2023-08-05",
+    "category": "Cryptocurrency / Web3",
+    "severity": "Critical",
+    "exposedData": ["Wallet public addresses", "Email addresses", "IP addresses", "KYC documents metadata", "Plaintext recovery hints"],
+    "recordsCount": "3,400,000",
+    "description": "A rogue insider credential compromised AWS S3 bucket backups containing customer verification snapshots.",
+    "targets": ["cryptovault", "mike_crypto", "hodl_king@eth.org", "sarah_tech", "trader@finance.com"]
+  },
+  {
+    "id": "breach-004",
+    "name": "StreamVibe Media Hub Breach",
+    "date": "2024-01-19",
+    "category": "Entertainment",
+    "severity": "Medium",
+    "exposedData": ["Email addresses", "Viewing logs", "Device fingerprints", "Subscription tier status"],
+    "recordsCount": "29,000,000",
+    "description": "Misconfigured Elasticsearch cluster discovered by security researchers indexed user streaming behaviors.",
+    "targets": ["streamvibe", "alex99@gmail.com", "movie_fanatic", "jane.smith@outlook.com", "streamer@twitch.tv"]
+  },
+  {
+    "id": "breach-005",
+    "name": "HealthPulse Fitness Tracker Breach",
+    "date": "2022-09-30",
+    "category": "Healthcare & IoT",
+    "severity": "High",
+    "exposedData": ["GPS activity routes", "Heart rate logs", "Email addresses", "Dates of birth", "Heights and weights"],
+    "recordsCount": "8,100,000",
+    "description": "Insecure Direct Object Reference (IDOR) flaw in mobile synchronization API leaked biometric wellness data.",
+    "targets": ["healthpulse", "john.doe@example.com", "fitness_guru", "sarah_tech", "runner@strava.com"]
+  },
+  {
+    "id": "breach-006",
+    "name": "TechForge Developer Community Leak",
+    "date": "2023-05-11",
+    "category": "Software & Tech",
+    "severity": "High",
+    "exposedData": ["GitHub OAuth tokens", "Email addresses", "Private repository names", "SSH public keys"],
+    "recordsCount": "5,600,000",
+    "description": "A supply-chain attack on a third-party analytics script extracted forum session tokens and profile scopes.",
+    "targets": ["techforge", "developer@web.io", "sarah_tech", "code_ninja", "admin@crypto-trader.io"]
+  },
+  {
+    "id": "breach-007",
+    "name": "QuickDelivery Logistics Incident",
+    "date": "2024-06-02",
+    "category": "Food & Delivery",
+    "severity": "Medium",
+    "exposedData": ["Home physical delivery addresses", "Customer phone numbers", "Delivery instructions", "Email addresses"],
+    "recordsCount": "19,800,000",
+    "description": "Exposed diagnostic API endpoint lacked authentication headers, enabling scraping of dispatch logs.",
+    "targets": ["quickdelivery", "alex99@gmail.com", "hungry_coder", "jane.smith@outlook.com"]
+  },
+  {
+    "id": "breach-008",
+    "name": "FinLearn Student Portal Leak",
+    "date": "2022-12-08",
+    "category": "Education",
+    "severity": "Medium",
+    "exposedData": ["Course enrolments", "Email addresses", "Student IDs", "Hashed passwords (MD5)"],
+    "recordsCount": "2,100,000",
+    "description": "Legacy database backup leaked on an accessible file server containing older MD5 salted credentials.",
+    "targets": ["finlearn", "student@university.edu", "john.doe@example.com", "sarah_tech"]
+  },
+  {
+    "id": "breach-009",
+    "name": "GameZone Multiplayer Forum Dump",
+    "date": "2023-02-17",
+    "category": "Gaming",
+    "severity": "High",
+    "exposedData": ["Usernames", "SHA-1 password hashes", "In-game purchase receipts", "IP addresses"],
+    "recordsCount": "34,200,000",
+    "description": "vBulletin zero-day exploit allowed attackers to download table dumps of active gamer discussions.",
+    "targets": ["gamezone", "gamer_pro_99", "alex99@gmail.com", "mike_crypto", "admin"]
+  },
+  {
+    "id": "breach-010",
+    "name": "AeroTravel Booking Gateway Leak",
+    "date": "2024-04-10",
+    "category": "Travel & Hospitality",
+    "severity": "Critical",
+    "exposedData": ["Passport numbers", "Flight itineraries", "Frequent flyer IDs", "Email addresses", "Date of birth"],
+    "recordsCount": "15,400,000",
+    "description": "Compromised partner booking API exposed encrypted travel manifests with weak symmetric keys.",
+    "targets": ["aerotravel", "jane.smith@outlook.com", "traveler_dan", "admin@crypto-trader.io"]
+  },
+  {
+    "id": "breach-011",
+    "name": "WorkCollab SaaS Workspace Exfiltration",
+    "date": "2023-07-28",
+    "category": "Productivity SaaS",
+    "severity": "High",
+    "exposedData": ["Corporate email domains", "Meeting transcripts", "Internal shared file links", "User roles"],
+    "recordsCount": "7,300,000",
+    "description": "Session hijacking campaign leveraged malicious OAuth application approvals to extract organization files.",
+    "targets": ["workcollab", "developer@web.io", "sarah_tech", "john.doe@example.com"]
+  },
+  {
+    "id": "breach-012",
+    "name": "PetCare Connect Veterinary Portal",
+    "date": "2022-04-15",
+    "category": "Lifestyle & Health",
+    "severity": "Low",
+    "exposedData": ["Owner names", "Pet medical history", "Zip codes", "Email addresses"],
+    "recordsCount": "1,900,000",
+    "description": "Publicly readable Amazon S3 bucket used for appointment reminders contained pet parent records.",
+    "targets": ["petcare", "jane.smith@outlook.com", "dog_lover_24"]
+  }
+]
